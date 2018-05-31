@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang ="en-us">
+<head>
+    <meta charaset="utf-8">
+    <title>Gem Game</title>
+
+    <link rel="stylesheet" type = "text/css" href = "assets/css/reset.css"/>
+    <link rel="stylesheet" type = "text/css" href = "assets/css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+
+<h1>Crystals Collector!</h1>
+
+<div id ="tutorial">
+<p>
+    You will be given a random number at the start of the game.
+</p>
+<p>
+    There are four crystals below. By clicking on a crystal you will
+     add a specific amount of points to your total score.
+</p>
+<p>
+    You win the game by matching your total score to random number, 
+    you lose the game if your total score goes above the random number.
+</p>
+<p>
+    The value of each cyrstal is hidden from you until you click on it.
+</p>
+<p>
+    Each time when the game starts, the game will change the values of each crystal.
+</p>
+</div>
+
+<div class="scoreBoard">
+    <div id ="goal">
+        <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+    </div>
+    <div id ="score">
+        <p>Wins: <span id = "wins"></span></p>
+        <p>Losses: <span id = "losses"></span></p>
+    </div>
+</div>
+
+<div class="gems">
+    <button id = "gem1button"><img src = "assets/images/gem1.png"></button>
+    <button id = "gem2button"><img src = "assets/images/gem2.png"></button>
+    <button id = "gem3button"><img src = "assets/images/gem3.png"></button>
+    <button id = "gem4button"><img src = "assets/images/gem4.png"></button>
+</div>
+
+<div class = "totalScore">
+    <h2>Your total score is:</h2>
+    <p><span id = "totalGem"></span></p>
+</div>
+
+</body>
+
+
+</html>
