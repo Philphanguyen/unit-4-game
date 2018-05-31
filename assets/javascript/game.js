@@ -17,12 +17,13 @@ $(document).ready(function() {
     $("#number-to-guess").text(targetNumber);
 
 function gemGenerator() {
-    var targetNumber = Math.floor(Math.random()*101)+19;
+    targetNumber = Math.floor(Math.random()*101)+19;
     gem1 = Math.floor(Math.random()*11)+1;
     gem2 = Math.floor(Math.random()*11)+1;
     gem3 = Math.floor(Math.random()*11)+1;
     gem4 = Math.floor(Math.random()*11)+1;
     console.log ("Gem Values: " + gem1 + "," + gem2 + "," + gem3 + "," + gem4)
+    console.log ("new goal " + targetNumber);
     $("#number-to-guess").text(targetNumber);
 }
 
@@ -31,6 +32,7 @@ function newGame() {
         gemGenerator();
         sumGem = 0;
         $("#totalGem").text(sumGem);
+        console.log("New Game activated");
     }
     else {
     }
@@ -40,6 +42,7 @@ function gameOver() {
         gemGenerator();
         sumGem = 0;
         $("#totalGem").text(sumGem);
+        console.log("game over");
     }
     else {
 
@@ -59,6 +62,7 @@ function checkGame() {
         gameOver();
         $("#losses").text(Losses);
     }
+    console.log (sumGem + " " + targetNumber);
 }
 
     $("#totalGem").text(sumGem);
